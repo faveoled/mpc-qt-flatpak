@@ -452,8 +452,6 @@
         "--enable-librsvg",
         "--enable-libvpx",
         "--enable-libmp3lame",
-        "--enable-libx264",
-        "--enable-libx265",
         "--enable-libwebp",
         "--enable-libjxl",
         "--enable-libxml2"
