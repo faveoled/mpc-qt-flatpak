@@ -3,16 +3,6 @@
   "app-version": "24.12",
   "runtime": "org.kde.Platform",
   "runtime-version": "6.8",
-  "add-extensions": {
-    "org.freedesktop.Platform.ffmpeg-full": {
-      "directory": "lib/ffmpeg",
-      "version": "24.08",
-      "add-ld-path": "."
-    }
-  },
-  "cleanup-commands": [
-    "mkdir -p /app/lib/ffmpeg"
-  ],
   "sdk": "org.kde.Sdk",
   "metadata": {
     "appdata": "io.github.mpc_qt.Mpc-Qt.appdata.xml"
