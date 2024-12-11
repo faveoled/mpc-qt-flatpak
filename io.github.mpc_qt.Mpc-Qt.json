@@ -2,10 +2,10 @@
   "app-id": "io.github.mpc_qt.Mpc-Qt",
   "app-version": "24.12",
   "runtime": "org.kde.Platform",
-  "runtime-version": "6.7",
+  "runtime-version": "6.8",
   "add-extensions": {
     "org.freedesktop.Platform.ffmpeg-full": {
-      "version": "23.08",
+      "version": "24.08",
       "autodownload": true,
       "autodelete": false
     }
@@ -474,8 +474,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/mpv-player/mpv/archive/refs/tags/v0.38.0.tar.gz",
-          "sha256": "86d9ef40b6058732f67b46d0bbda24a074fae860b3eaae05bab3145041303066"
+          "url": "https://github.com/mpv-player/mpv/archive/refs/tags/v0.39.0.tar.gz",
+          "sha256": "2ca92437affb62c2b559b4419ea4785c70d023590500e8a52e95ea3ab4554683"
         }
       ]
     },
