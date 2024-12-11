@@ -449,7 +449,6 @@
         "--enable-libfontconfig",
         "--enable-libfreetype",
         "--enable-libopus",
-        "--enable-libmysofa",
         "--enable-librsvg",
         "--enable-libvpx",
         "--enable-libmp3lame",
