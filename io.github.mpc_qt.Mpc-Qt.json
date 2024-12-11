@@ -6,12 +6,13 @@
   "add-extensions": {
     "org.freedesktop.Platform.ffmpeg-full": {
       "directory": "lib/ffmpeg",
-      "add-ld-path": ".",
       "version": "24.08",
-      "autodownload": true,
-      "autodelete": false
+      "add-ld-path": "."
     }
   },
+  "cleanup-commands": [
+    "mkdir -p /app/lib/ffmpeg"
+  ],
   "sdk": "org.kde.Sdk",
   "metadata": {
     "appdata": "io.github.mpc_qt.Mpc-Qt.appdata.xml"
@@ -23,7 +24,7 @@
   "finish-args": [
     "--share=ipc",
     "--share=network",
-    "--socket=x11",
+    "--socket=fallback-x11",
     "--socket=wayland",
     "--socket=pulseaudio",
     "--device=dri",
