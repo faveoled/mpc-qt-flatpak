@@ -5,6 +5,8 @@
   "runtime-version": "6.8",
   "add-extensions": {
     "org.freedesktop.Platform.ffmpeg-full": {
+      "directory": "lib/ffmpeg",
+      "add-ld-path": ".",
       "version": "24.08",
       "autodownload": true,
       "autodelete": false
