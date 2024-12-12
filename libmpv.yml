@@ -13,6 +13,7 @@ config-opts:
   - -Dbuild-date=false
   - -Dalsa=disabled
   - -Dmanpage-build=disabled
+  - -Dgl-x11=enabled
 sources:
   - type: archive
     url: https://github.com/mpv-player/mpv/archive/refs/tags/v0.39.0.tar.gz
