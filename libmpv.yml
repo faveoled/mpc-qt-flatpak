@@ -24,6 +24,7 @@ sources:
       stable-only: true
       url-template: https://github.com/mpv-player/mpv/archive/refs/tags/v$version.tar.gz
 modules:
+
   - name: luajit
     no-autogen: true
     make-args:
@@ -42,7 +43,28 @@ modules:
           stable-only: false
     cleanup:
       - /bin
-    
+
+
+  - name: zimg
+    config-opts:
+      - --disable-static
+    cleanup:
+      - /include
+      - /lib/pkgconfig
+      - /share/doc
+    sources:
+      - type: archive
+        archive-type: tar
+        url: https://api.github.com/repos/sekrit-twc/zimg/tarball/release-3.0.5
+        sha256: 1b8998f03f4a49e4d730033143722b32bc28a5306ef809ccfb3b4bbb29e4b784
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/sekrit-twc/zimg/releases/latest
+          url-query: .tarball_url
+          version-query: .tag_name | sub("^release-"; "")
+          timestamp-query: .published_at
+
+
   - name: libplacebo
     buildsystem: meson
     config-opts:
