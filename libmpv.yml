@@ -85,6 +85,8 @@ modules:
     config-opts:
       - -Dvulkan=enabled
       - -Dshaderc=enabled
+      - -Ddovi=disabled
+      - -Dlibdovi=disabled      
     cleanup:
       - /include
       - /lib/pkgconfig
