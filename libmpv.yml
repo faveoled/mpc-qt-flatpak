@@ -12,8 +12,28 @@ config-opts:
   - -Ddebug=false
   - -Dbuild-date=false
   - -Dalsa=disabled
-  - -Dmanpage-build=disabled
-  - -Dgl-x11=enabled
+  - -Dmanpage-build=disabled  
+  - -Dtests=false
+  - -Djack=enabled
+  - -Dpipewire=enabled
+  - -Dpulse=enabled
+  - -Ddrm=enabled
+  - -Degl=enabled
+  - -Dx11=enabled
+  - -Dwayland=enabled
+  - -Degl-drm=enabled
+  - -Dgpl=true
+  - -Dlibbluray=enabled
+  - -Dcdda=enabled
+  - -Ddvbin=enabled
+  - -Ddvdnav=enabled
+  - -Dlibarchive=enabled
+  - -Dcuda-hwaccel=enabled
+  - -Dvdpau=enabled
+  - -Dvaapi=enabled
+  - -Dvulkan=enabled
+  - -Duchardet=enabled
+  
 sources:
   - type: archive
     url: https://github.com/mpv-player/mpv/archive/refs/tags/v0.39.0.tar.gz
