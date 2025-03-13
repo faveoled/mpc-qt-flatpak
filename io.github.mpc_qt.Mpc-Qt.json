@@ -8,8 +8,6 @@
     "appdata": "io.github.mpc_qt.Mpc-Qt.appdata.xml"
   },
   "command": "mpc-qt",
-  "rename-icon": "mpc-qt",
-  "copy-icon": true,
   "finish-args": [
     "--share=ipc",
     "--share=network",
