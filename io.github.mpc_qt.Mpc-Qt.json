@@ -31,6 +31,15 @@
     "/lib/pkgconfig",
     "/share/man"
   ],
+  "add-extensions": {
+    "org.freedesktop.Platform.ffmpeg-full": {
+        "version": "24.08",
+        "directory": "lib/ffmpeg",
+        "add-ld-path": ".",
+        "no-autodownload": false,
+        "autodelete": false
+    }
+  },  
   "modules": [
     "libmpv.yml",
     {
